@@ -53,9 +53,13 @@ header {
     margin-left: 30px;
 }
 
-.left figure {
+.left div {
+    display: flex;
     flex-wrap: wrap;
-    width: 30%;
+}
+
+.left figure {
+    width: 20%;
     border: 3px solid white;
 }
 
@@ -72,10 +76,27 @@ header {
 
 
 .right {
-    margin-left: 25px;
-    background-color: red;
+    background-color: thistle;
+    margin-left: 20px;
     border-radius: 10px;
-    opacity: 0.2;
+    opacity: 0.7;
     width: 40%;
     height: 80%;
+}
+
+.right h3 {
+    margin-left: 30px;
+}
+
+.right div {
+    display: flex;
+    margin-left: 20px;
+    background-color: turquoise;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.right div img {
+    width: 30%;
 }
