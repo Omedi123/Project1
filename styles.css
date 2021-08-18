@@ -45,7 +45,7 @@ header {
     border-radius: 10px;
     opacity: 0.7;
     width: 100%;
-    height: 80%;
+    height: 90%;
     margin-right: 5px;
 }
 
@@ -59,6 +59,7 @@ header {
 }
 
 .left figure {
+    flex-wrap: wrap;
     width: 20%;
     border: 3px solid white;
     border-radius: 5px;
@@ -71,36 +72,50 @@ header {
     height: 120px;
 }
 
-
-
-
-
-
-
+/*Top Right Section*/
 
 .right {
-    background-color: thistle;
-    margin-left: 20px;
+    background-color: silver;
+    margin-left: 10px;
     border-radius: 10px;
     opacity: 0.7;
-    width: 40%;
-    height: 80%;
+    width: 55%;
+    height: 90%;
+
 }
 
 .right h3 {
     margin-left: 30px;
 }
 
-.right div {
-    display: flex;
-    margin-left: 20px;
-    background-color: turquoise;
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
+.right figure {
+    height: 120px;
+    width: 90%;
+    border: 8px solid white;
+    border-radius: 5px;
 }
 
 .right div img {
-    height: 60px;
-    width: 30%;
+    height: 100%;
+    width: 35%;
+    position: relative;
+    float: left;
 }
+
+.right figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 65%;
+    justify-content: center;
+    align-content: center;
+}
+
+.text {
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+
