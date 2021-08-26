@@ -51,7 +51,7 @@ header li {
 }
 
 
-.fa-border {
+header .fa-border {
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 50%;
@@ -75,3 +75,149 @@ header li {
     margin-right: 12px;
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+    height: 38em;
+    width: 60%;
+}
+
+.left div {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+}
+
+.left .inside {
+    height: 400px;
+    position: relative;
+    bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.left h3 {
+    padding-top: 20px;
+    display: block;
+    justify-content: flex-start;
+}
+
+
+.left ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0px 20px 0px 0px;
+    width: 100%;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left li {
+    display: flex;
+    flex-direction: row;
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 210px;
+    min-height: 210px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.left figure {
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 210px;
+    min-height: 210px;
+    padding: 0px; 
+    margin: 0px 15px 0px 0px;
+}
+
+.left img {
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 150px;
+    min-height: 150px;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    width: 30%;   
+    margin-left: 15px; 
+    padding-left: 40px;
+    height: 38em;
+}
+
+.right div {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+}
+
+.right .outside {
+    height: 400px;
+    position: relative;
+    bottom: 45px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right h3 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.fa-chart-line {
+    margin: 40px;
+}
+
+.right ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.right li {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 30px 0px;
+    max-height: 150px;
+    min-height: 150px;
+}
+
+.right figure {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+.right img {
+    width: 54%;
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 120px;
+    min-height: 120px;
+}
+
+.right figcaption {
+    align-self: center;
+    
+}
