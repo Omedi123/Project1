@@ -1,5 +1,5 @@
 body {
-    background-color: blanchedalmond;
+    background-color: white;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -70,12 +70,11 @@ header .fa-border {
     border-bottom-left-radius: 20px;
 }
 
-
 .circle p {
     margin-right: 12px;
 }
 
-section {
+.top {
     display: flex;
     flex-wrap: wrap;
 }
@@ -84,7 +83,7 @@ section {
     padding-left: 40px;
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
+    background-color: #F2F2F2;
     height: 38em;
     width: 60%;
 }
@@ -151,8 +150,8 @@ section {
 .right {
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
-    color: white;
+    background-color: #F2F2F2;
+    color: black;
     width: 30%;   
     margin-left: 15px; 
     padding-left: 40px;
@@ -219,5 +218,63 @@ section {
 
 .right figcaption {
     align-self: center;
-    
+}
+
+.bottom {
+    height: 420px;
+}
+
+.bottom h3 {
+    padding: 40px 0px 0px 40px;
+}
+
+.bottom div {
+    display: block;
+}
+
+.bottom ul {
+    list-style-type: none;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bottom figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-right: 5px;
+}
+
+
+.bottom img {
+    height: 20em;
+    max-width: 240px;
+}
+
+.bottom .double img{
+    max-height: 9em;
+}
+
+#last {
+    margin-right: 0px;
+}
+
+footer {
+    padding-top: 30px;
+}
+
+.container {
+    display: block;
+    background-color: #F2F2F2;
+    padding: 10px 40px 0px 40px;
+    height: 180px;
+}
+
+.list1 {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
 }
