@@ -225,12 +225,14 @@ header .fa-info-circle{
 
 .bottom .c2 {
     width: 260px;
+    margin-right: 4px;
 }
 
 .bottom figure {
     display: flex;
     flex-direction: column;
     margin: 0px;
+    width: 260px;
 }
 
 .bottom img {
@@ -245,7 +247,7 @@ header .fa-info-circle{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 260px;
+    margin: 4px;
 }
 
 .bottom .double img{
@@ -256,16 +258,14 @@ header .fa-info-circle{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 260px;
+    margin-left: 4px;
 }
 
 .bottom .double2 img {
     max-height: 9em;
 }
 
-.bottom .double2 figure {
-    margin: 0px;
-}
+
 
 .bottom figcaption {
     border: 3px solid ;
@@ -347,3 +347,28 @@ footer {
     }
 }
 
+@media screen and (max-width: 1139px) {
+    .bottom h3 {
+        text-align: center;
+    }
+
+    .bottom .double2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bottom .double2 figure {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .bottom .double {
+        display: flex;
+         flex-direction: row;
+    }
+    
+    .bottom .double figure {
+        margin: 10px;
+    }
+}
