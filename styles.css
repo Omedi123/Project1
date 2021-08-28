@@ -63,6 +63,11 @@ header .fa-border {
     border: solid .0em #eee;
 }
 
+header .fa-info-circle{
+    color: #0065FC;
+    margin-right: 5px;
+}
+
 .circle {
     border: 2px solid #F2F2F2;
     border-left-width: 5px;
@@ -145,7 +150,6 @@ header .fa-border {
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
-    color: black;
     max-width: 32%;   
     margin-left: 35px; 
     padding-left: 40px;
@@ -218,12 +222,12 @@ header .fa-border {
 }
 
 .right figcaption {
-    margin-left: 4px;
+    margin-left: 10px;
     align-self: center;
 }
 
 .bottom {
-    height: 420px;
+    height: 450px;
     padding-bottom: 40px;
 }
 
@@ -320,4 +324,17 @@ footer {
 }
 
 
-
+@media screen and (max-width: 1264px) {
+    .top {
+        justify-content: center;
+    }
+    .left {
+        max-width: 75%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .right {
+        margin-left: 0;
+        max-width: 61%;
+    }
+}
