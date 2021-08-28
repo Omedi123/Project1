@@ -1,10 +1,12 @@
 body {
     background-color: white;
     font-family: 'Raleway', sans-serif;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 0px;
 }
 
 nav {
-    padding-left: 40px;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -21,7 +23,6 @@ nav li {
 }
 
 header {
-    padding-left: 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -37,6 +38,11 @@ header h4 {
 header p {
     margin: 0px;
 }
+
+/*input [type=search] {
+    width: 100px;
+    height: 100px;
+}*/
 
 header ul {
     display: flex;
@@ -65,7 +71,7 @@ header .fa-border {
 
 header .fa-info-circle{
     color: #0065FC;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 .circle {
@@ -82,7 +88,6 @@ header .fa-info-circle{
 }
 
 .top {
-    padding-left: 40px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -92,30 +97,29 @@ header .fa-info-circle{
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
-    height: 38em;
-    max-width: 57%;
+    max-width: 654px;
     border-radius: 30px;
+    padding-right: 40px;
 }
 
 .left div {
     flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.left .inside {
-    height: 400px;
-    width: 100%;
 }
 
 .left h3 {
     padding-top: 20px;
     display: block;
     justify-content: flex-start;
+    margin-bottom: 0px;
+}
+
+.left h4 {
+    display: block;
+    margin: 0px;
 }
 
 .left .a2 {
     display: flex;
-    margin-right: 20px;
 }
 
 .left figure {
@@ -124,7 +128,7 @@ header .fa-info-circle{
     max-height: 210px;
     min-height: 210px;
     padding: 0px; 
-    margin: 0px 15px 10px 0px;
+    margin: 0px 5px 10px 5px;
     background-color: white;
     border: 4px solid white;
     border-radius: 30px;
@@ -151,51 +155,31 @@ header .fa-info-circle{
     flex-wrap: wrap;
     background-color: #F2F2F2;
     max-width: 32%;   
-    margin-left: 35px; 
+    margin-left: 25px; 
     padding-left: 40px;
-    height: 38em;
     border-radius: 30px;
 }
 
 .right div {
     display: flex;
-    flex-direction: row;
-    height: 70px;
     width: 100%;
-}
-
-.right .outside {
-    height: 400px;
-    position: relative;
-    bottom: 45px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .right h3 {
     padding-top: 20px;
-    display: flex;
     justify-content: flex-start;
     width: 100%;
 }
 
 .fa-chart-line {
-    margin: 40px;
-}
-
-.right .B1 {
-    list-style-type: none;
-    display: flex;
-    padding-right: 40px;
-    margin-top: 0px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 100%;
+    float: right;
+    margin: 0px 40px 20px 0px;
 }
 
 .right .B2 {
-    display: flex;
     flex-direction: column;
+    padding-right: 40px;
+    justify-content: center;
 }
 
 .right figure {
@@ -226,11 +210,6 @@ header .fa-info-circle{
     align-self: center;
 }
 
-.bottom {
-    height: 450px;
-    padding-bottom: 40px;
-}
-
 .bottom h3 {
     padding: 40px 0px 0px 40px;
 }
@@ -242,7 +221,6 @@ header .fa-info-circle{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 338px;
 }
 
 .bottom .c2 {
@@ -253,7 +231,6 @@ header .fa-info-circle{
     display: flex;
     flex-direction: column;
     margin: 0px;
-
 }
 
 .bottom img {
@@ -324,17 +301,50 @@ footer {
 }
 
 
-@media screen and (max-width: 1264px) {
+@media screen and (max-width: 1254px) {
     .top {
         justify-content: center;
     }
-    .left {
-        max-width: 75%;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
+
     .right {
         margin-left: 0;
-        max-width: 61%;
+        max-width: 100%;
+        order: 1;
+        margin-bottom: 20px;
+        display: flex;
+        padding-left: 0px;
     }
+
+    .right h3 {
+        padding-left: 40px;
+    }
+
+
+    .right .B2 {
+        flex-direction: row;
+        padding: 0px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .right .B2 figure {
+        margin: 20px;
+        max-width: 320px;
+        min-width: 320px;
+    }
+
+    .left {
+        max-width: 100%;
+        justify-content: center;
+        order: 2;
+        padding-left: 0px;
+    }
+
+    .left div {
+        margin: 15px;
+        justify-content: space-evenly;
+    }
+
+
 }
+
