@@ -337,14 +337,13 @@ footer {
         max-width: 100%;
         justify-content: center;
         order: 2;
-        padding-left: 0px;
+        padding-right: 40px;
+        padding-left: 40px;
     }
 
     .left div {
         margin: 15px;
         justify-content: space-evenly;
     }
-
-
 }
 
