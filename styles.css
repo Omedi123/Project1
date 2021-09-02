@@ -19,16 +19,21 @@ nav ul {
 }
 
 nav li {
+    color: #0065FC;
     margin-right: 20px;
+}
+
+.midul {
+    display: none;
+}
+
+.secul {
+    display: none;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-}
-
-header div {
-    max-width: 800px;
 }
 
 header h4 {
@@ -39,15 +44,38 @@ header p {
     margin: 0px;
 }
 
-/*input [type=search] {
-    width: 100px;
-    height: 100px;
-}*/
+.holder {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+}
+
+header .map {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+input[type=search] {
+    width: 200px;
+    font-size: 95%;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+header button {
+    margin: 0px;
+    color: white;
+    background-color: blue;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 12px;
+}
 
 header ul {
     display: flex;
     padding: 0;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -65,7 +93,6 @@ header .fa-border {
     position: relative;
     right: 10px;
     padding: .2em 0.40em 0.15em;
-    border: solid .0em #eee;
 }
 
 header .fa-info-circle{
@@ -122,18 +149,17 @@ header .fa-info-circle{
 }
 
 .left figure {
-    max-width: 200px;
+    width: 200px;
     min-width: 200px;
     max-height: 210px;
     min-height: 210px;
     margin: 0px 5px 10px 5px;
     background-color: white;
     border: 4px solid white;
-    border-radius: 30px;
 }
 
 .left img {
-    max-width: 200px;
+    width: 200px;
     min-width: 200px;
     max-height: 130px;
     min-height: 130px;
@@ -186,10 +212,8 @@ header .fa-info-circle{
     display: flex;
     background-color: white;
     border: 4px solid white;
-    border-radius: 30px;
     height: 120px;
     margin-bottom: 50px;
-    min-width: 320px;
 }
 
 .right img {
@@ -231,6 +255,10 @@ header .fa-info-circle{
     width: 260px;
 }
 
+#island {
+    height: 6em;
+}
+
 .bottom img {
     height: 22em;
     max-width: 100%;
@@ -249,7 +277,7 @@ header .fa-info-circle{
 }
 
 .bottom .double img{
-    max-height: 9em;
+    max-height: 11em;
 }
 
 .bottom .double2 {
@@ -259,12 +287,16 @@ header .fa-info-circle{
     margin-left: 4px;
 }
 
+#garde {
+    height: 7em;
+}
+
 .bottom .double2 img {
     max-height: 9em;
 }
 
 .bottom figcaption {
-    border: 3px solid ;
+    border: 3px solid white;
     border-radius: 0px 0px 30px 30px;
     padding: 15px;
 }
@@ -295,6 +327,15 @@ footer {
     color: #0065FC;
 }
 
+figure {
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
 
 @media screen and (max-width: 1254px) {
     .top {
@@ -323,9 +364,8 @@ footer {
     }
 
     .right .B2 figure {
-        margin: 20px;
         max-width: 320px;
-        min-width: 320px;
+        min-width: 288px;
     }
 
     .left {
@@ -357,13 +397,97 @@ footer {
     }
 }
 
+@media screen and (max-width: 655px) {
+    .left figure {
+        width: 100%;
+    }
+
+    .left img {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 612px) {
+
+
     .bottom .double {
         display: flex;
-         flex-direction: row;
+        flex-direction: row;
     }
     
     .bottom .double figure {
         margin: 10px;
     }
 }
+
+@media screen and (max-width: 491px) {
+    body {
+        background-color: white;
+        font-family: 'Raleway', sans-serif;
+        padding: 0px;
+    }
+
+    nav ul {
+        padding: 0px;
+        margin-left: 20px;
+    }
+
+    #Filters {
+        display: flex;
+    }
+
+    header div {
+        margin: 10px;
+    }
+
+    .holder {
+        margin: 0px;
+    }
+
+    header ul :nth-child(3) {
+        order: 3;
+    }
+
+    header ul :nth-child(4){
+        order: 2;
+    }
+
+    header ul :nth-child(5) {
+        order: 4;
+    }
+    
+    figcaption p {
+        margin: 0px;
+    }
+
+    .firul {
+        display: none;
+    }
+
+    .midul {
+        display: flex;
+        align-self: center;
+    }
+
+    .secul {
+        display: flex;
+        text-align: center;
+    }
+
+    .insec {
+        flex: 1;
+    }
+
+    .insec2 {
+        flex: 1;
+    }
+    
+    a {
+        text-decoration: none
+    }
+
+    .list1 {
+        flex-direction: column;
+    }
+}
+
