@@ -277,7 +277,7 @@ header .fa-info-circle{
 }
 
 .bottom .double img{
-    max-height: 11em;
+    height: 11em;
 }
 
 .bottom .double2 {
@@ -292,7 +292,7 @@ header .fa-info-circle{
 }
 
 .bottom .double2 img {
-    max-height: 9em;
+    height: 9em;
 }
 
 .bottom figcaption {
@@ -438,18 +438,6 @@ ul {
 }
 
 
-@media screen and (max-width: 612px) {
-    .bottom .double {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .bottom .double figure {
-        margin: 10px;
-    }
-}
-
-
 @media screen and (max-width: 600px) {
     body {
         background-color: white;
@@ -519,5 +507,48 @@ ul {
     .list1 {
         flex-direction: column;
     }
+
 }
 
+    @media screen and (max-width: 612px) and (min-width: 0px){
+        .bottom figure {
+            height: 14em;
+        }
+    
+        .bottom h3 {
+            padding: 0px;
+        }
+        
+        .bottom .double {
+            display: flex;
+            flex-direction: column;
+            margin: 4px;
+        }
+            
+        .bottom .double figure {
+            margin: 10px;
+        }
+
+        .bottom .c2 {
+            margin: 0px;
+        }
+
+        .bottom figcaption {
+            border: 0px;
+        }
+
+        .bottom .double2 {
+            flex-direction: column;
+        }
+
+        #island {
+            height: 11em;
+        }
+
+        #garde {
+            height: 11em;
+        }
+        #long {
+            height: 11em;
+        }
+    }
