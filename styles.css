@@ -305,15 +305,12 @@ footer {
     display: block;
     background-color: #F2F2F2;
     padding-left: 0px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .list1 {
     display: flex;
-}
-
-.list1 :nth-child(1) {
-    margin-right: 12px;
+    justify-content: space-between;
 }
 
 .fa-star {
@@ -550,5 +547,11 @@ ul {
         }
         #long {
             height: 11em;
+        }
+    }
+
+    @media screen (max-width: 675px) {
+        .list1 div {
+            width: 140px;
         }
     }
