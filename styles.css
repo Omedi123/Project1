@@ -305,18 +305,11 @@ footer {
     display: block;
     background-color: #F2F2F2;
     padding-left: 0px;
-    margin-top: 30px;
-}
-
-.container {
-    padding: 10px 0px 0px 0px;
+    margin-top: 15px;
 }
 
 .list1 {
-    width: 80%;
     display: flex;
-    justify-content: space-between;
-    padding-left: 30px;
 }
 
 .list1 :nth-child(1) {
@@ -400,6 +393,10 @@ ul {
 
     .bottom .double2 figure {
         margin: 10px;
+    }
+
+    #garde {
+        height: 9em;
     }
 }
 
