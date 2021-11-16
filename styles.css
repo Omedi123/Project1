@@ -437,7 +437,6 @@ ul {
     } 
 }
 
-
 @media screen and (max-width: 600px) {
     body {
         background-color: white;
@@ -510,12 +509,6 @@ ul {
 
 }
 
-@media screen and (max-width: 874px) {
-    .c2 figure {
-        margin-top: 10px;
-    } 
-}
-
     @media screen and (max-width: 612px) and (min-width: 0px){
         .bottom .c1 {
             padding-left: 40px;
@@ -531,9 +524,7 @@ ul {
         }
         
         .bottom .double {
-            display: flex;
-            flex-direction: column;
-            margin: 4px;
+            margin: 12px;
         }
             
         .bottom .double figure {
@@ -550,6 +541,7 @@ ul {
 
         .bottom .double2 {
             flex-direction: column;
+            margin: 12px;
         }
 
         #island {
