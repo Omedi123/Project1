@@ -548,10 +548,11 @@ ul {
         #long {
             height: 11em;
         }
-    }
+}
 
-    @media screen (max-width: 675px) {
-        .list1 div {
-            width: 140px;
-        }
+@media screen and (max-width: 600px) and (min-width: 0px) {
+    .container {
+        display: flex;
+        justify-content: center;
     }
+}
