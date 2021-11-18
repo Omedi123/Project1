@@ -98,6 +98,7 @@ header ul {
     display: flex;
     padding: 0;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 header li {
@@ -372,12 +373,6 @@ ul {
 
 @media screen and (max-width: 600px) {
     body {
-        padding: 0px;
-    } 
-}
-
-@media screen and (max-width: 600px) {
-    body {
         background-color: white;
         font-family: 'Raleway', sans-serif;
         padding: 0px;
@@ -385,18 +380,34 @@ ul {
 
     nav ul {
         padding: 0px;
-        margin-left: 20px;
     }
 
-    #Filters {
-        display: flex;
+    header h4 {
+        justify-content: flex-start;
+    }
+
+    header p {
+        justify-content: flex-start;
     }
 
     header div {
-        margin: 10px;
+        margin-left: 20px;
+    }
+
+    header ul {
+        justify-content: flex-start;
+    }
+
+    header li {
+        margin-right: 10px;
+    }
+
+    .circle {
+        margin: 3px;
     }
 
     .holder {
+        justify-content: flex-start;
         margin: 0px;
     }
 
@@ -410,6 +421,27 @@ ul {
 
     header ul :nth-child(5) {
         order: 4;
+    }
+
+    .left {
+        justify-content: flex-start;
+    }
+
+    .left h3 {
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .left h4 {
+        padding: 0px;
+    }
+
+    .left div {
+        margin: 10px;
+    }
+
+    .right figure {
+        margin-bottom: 20px;
     }
     
     figcaption p {
@@ -444,6 +476,14 @@ ul {
 
     .list1 {
         flex-direction: column;
+    }
+
+    .rightpop h3 {
+        padding: 0 20px;
+    }
+
+    .bottom h3 {
+        padding: 0px 0px 0px 30px;
     }
 }
 
