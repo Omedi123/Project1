@@ -6,6 +6,13 @@ body {
     margin: 0px;
 }
 
+.main {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -18,9 +25,26 @@ nav ul {
     padding-left: 0px;
 }
 
+.accomodationsLink {
+    border-top: 2px solid #0065FC;
+    padding-top: 23px;
+}
+
+.activitiesLink {
+    padding-top: 25px;
+}
+
+.signUp {
+    margin-top: 25px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
 nav li {
     color: #0065FC;
-    margin-right: 20px;
+    margin: 0 30px;
 }
 
 .midul {
@@ -35,6 +59,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
 
 header h4 {
     margin: 21.28px 0px 0px 0px;
@@ -239,24 +264,13 @@ header .fa-info-circle{
 
 .bottom .c1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.bottom .c2 {
-    width: 260px;
-    margin-right: 4px;
 }
 
 .bottom figure {
     display: flex;
     flex-direction: column;
-    margin: 0px;
-    width: 260px;
-}
-
-#island {
-    height: 6em;
 }
 
 .bottom img {
@@ -268,33 +282,6 @@ header .fa-info-circle{
     object-fit: cover;
 }
 
-.bottom .double{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 4px;
-    margin-right: 4px;
-}
-
-.bottom .double img{
-    height: 11em;
-}
-
-.bottom .double2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 4px;
-}
-
-#garde {
-    height: 7em;
-}
-
-.bottom .double2 img {
-    height: 9em;
-}
-
 .bottom figcaption {
     border: 3px solid white;
     border-radius: 0px 0px 30px 30px;
@@ -304,7 +291,7 @@ header .fa-info-circle{
 footer {
     display: block;
     background-color: #F2F2F2;
-    padding-left: 0px;
+    padding: 10px;
     margin-top: 10px;
 }
 
@@ -379,22 +366,6 @@ ul {
 }
 
 @media screen and (max-width: 1139px) {
-    .bottom h3 {
-        text-align: center;
-    }
-
-    .bottom .double2 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .bottom .double2 figure {
-        margin: 10px;
-    }
-
-    #garde {
-        height: 9em;
-    }
 }
 
 @media screen and (max-width: 516px) {
@@ -504,50 +475,7 @@ ul {
 }
 
     @media screen and (max-width: 612px) and (min-width: 0px){
-        .bottom .c1 {
-            padding-left: 40px;
-            padding-right: 40px;
-        }
 
-        .bottom figure {
-            height: 14em;
-        }
-    
-        .bottom h3 {
-            padding: 0px;
-        }
-        
-        .bottom .double {
-            margin: 12px;
-        }
-            
-        .bottom .double figure {
-            margin: 10px;
-        }
-
-        .bottom .c2 {
-            margin: 0px;
-        }
-
-        .bottom figcaption {
-            border: 0px;
-        }
-
-        .bottom .double2 {
-            flex-direction: column;
-            margin: 12px;
-        }
-
-        #island {
-            height: 11em;
-        }
-
-        #garde {
-            height: 11em;
-        }
-        #long {
-            height: 11em;
-        }
 }
 
 @media screen and (max-width: 600px) and (min-width: 0px) {
