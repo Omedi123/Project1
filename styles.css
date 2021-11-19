@@ -350,14 +350,6 @@ ul {
     }
 }
 
-@media screen and (max-width: 730px) and (min-width: 517px){
-    .left div {
-        margin: 0px;
-        margin-top: 15px;
-        justify-content: space-evenly;
-    }
-}
-
 @media screen and (max-width: 516px) {
     .left {
         background-color: white;
@@ -424,19 +416,13 @@ ul {
     }
 
     .left h3 {
-        padding: 0;
+        padding: 0 20px;
         justify-content: flex-start;
     }
 
     .left h4 {
-        padding: 0px;
+        padding: 0 20px;
     }
-
-    .left div {
-        margin: 10px;
-    }
-
-
     
     figcaption p {
         margin: 0px;
@@ -477,7 +463,7 @@ ul {
     }
 
     .bottom h3 {
-        padding: 0px 0px 0px 30px;
+        padding: 0px 20px;
     }
 }
 
