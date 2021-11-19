@@ -150,7 +150,8 @@ article {
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
-    border-radius: 30px;;
+    border-radius: 30px;
+    justify-content: space-evenly;
 }
 
 .left div {
@@ -303,7 +304,7 @@ ul {
     list-style-type: none;
 }
 
-@media screen and (max-width: 1865px){ 
+@media screen and (max-width: 1890px){ 
 
     .top {
         justify-content: center;
@@ -335,6 +336,7 @@ ul {
         justify-content: center;
         order: 2;
         width: 1115px;
+        margin: 10px 0 0 0;
     }
     
     .left .a2 {
@@ -350,12 +352,9 @@ ul {
     }
 }
 
-@media screen and (max-width: 516px) {
+@media screen and (max-width: 733px) {
     .left {
-        background-color: white;
-    }
-    .right {
-        background-color: white;
+        justify-content: flex-start;
     }
 }
 
@@ -460,10 +459,20 @@ ul {
 
     .rightpop h3 {
         padding: 0 20px;
+        justify-content: flex-start;
     }
 
     .bottom h3 {
         padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 516px) {
+    .left {
+        background-color: white;
+    }
+    .right {
+        background-color: white;
     }
 }
 
