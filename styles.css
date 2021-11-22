@@ -94,15 +94,18 @@ header button {
     padding: 12px;
 }
 
+.main {
+    width: 100%;
+}
+
 header ul {
     display: flex;
     padding: 0;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 header li {
-    margin-right: 20px;
     display: flex;
     align-items: center;
 }
@@ -118,7 +121,6 @@ header .fa-border {
 
 header .fa-info-circle{
     color: #0065FC;
-    margin-right: 20px;
 }
 
 .circle {
