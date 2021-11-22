@@ -15,6 +15,7 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
+    padding: 0px;
 }
 
 .accomodationsLink {
@@ -108,6 +109,7 @@ header ul {
 header li {
     display: flex;
     align-items: center;
+    margin: 5px;
 }
 
 header .fa-border {
@@ -257,18 +259,14 @@ article {
 
 .bottom .c1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    border: 2px solid red;
     flex-wrap: wrap;
 }
 
-.bottom figure {
-    display: flex;
-    flex-direction: column;
-}
-
 .bottom img {
-    max-height: 22em;
-    max-width: 100%;
+    width: 280px;
+    height: 500px;
     border-radius: 30px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -278,7 +276,35 @@ article {
 .bottom figcaption {
     border: 3px solid white;
     border-radius: 0px 0px 30px 30px;
-    padding: 15px;
+    padding: 8px;
+}
+
+.bottom figure {
+    margin: 10px;
+}
+
+.c2 {
+    width: 25%;
+}
+
+.double {
+    width: 25%;
+}
+
+#fort {
+    height: 300px;
+}
+
+#island {
+    height: 145px;
+}
+
+#garde {
+    height: 145px;
+}
+
+#long {
+    height: 300px;
 }
 
 footer {
@@ -383,10 +409,6 @@ ul {
         margin-left: 20px;
     }
 
-    header ul {
-        justify-content: flex-start;
-    }
-
     header li {
         margin-right: 10px;
     }
@@ -482,5 +504,11 @@ ul {
     .container {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    header ul {
+        justify-content: flex-start;
     }
 }
