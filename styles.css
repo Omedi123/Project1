@@ -259,7 +259,6 @@ article {
 
 .bottom .c1 {
     display: flex;
-    border: 2px solid red;
 }
 
 .double img{
@@ -304,7 +303,7 @@ div.double {
 }
 
 #long2 {
-    height: 160px;
+    height: 175px;
 }
 
 .bottom figcaption {
@@ -383,6 +382,71 @@ ul {
     .B2 figure {
         margin-left: 2px;
         margin-right: 2px;
+    }
+}
+
+@media screen and (max-width: 1071px) {
+    .c1 {
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+    }
+    
+    .c2 {
+        margin: 0 30px 0 30px;
+    }
+
+    #park {
+        height: 89%;
+    }
+} 
+
+@media screen and (max-width: 747px) {
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .bottom figure {
+        padding: 0px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 727px) {
+    .c2 img {
+        height: 180px;
+        min-width: 284px;
+    }
+    
+    .double img {
+        height: 180px;
+    }
+
+    #island2 {
+        height: 180px;
+    }
+
+    #park {
+        height: 180px;
+    }
+
+    #garde2 {
+        height: 180px;
+    }
+    #long2 {
+        height: 180px;
+    }
+
+    .bottom img {
+        width: 100%;
+    }
+    .bottom h3 {
+        display: flex;
+        padding: 0px;
+        justify-content: center;
     }
 }
 
@@ -501,6 +565,7 @@ ul {
     .left {
         background-color: white;
     }
+
     .right {
         background-color: white;
     }
@@ -516,5 +581,11 @@ ul {
 @media screen and (max-width: 538px) {
     header ul {
         justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 363px) {
+    .circle {
+        font-size: 14px;
     }
 }
